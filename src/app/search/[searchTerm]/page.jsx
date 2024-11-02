@@ -27,7 +27,7 @@ export default async function SearchPage({ params }) {
     return (
         <div>
             {results && results.length === 0 ? (
-                <h1 className='text-center pt-6'>No results found for "{searchTerm}"</h1>
+                <h1 className='text-center pt-6'>No results found for &quot;{searchTerm}&quot;</h1>
             ) : (
                 <Suspense fallback={<div>Loading results...</div>}>
                     <Results results={results} />
